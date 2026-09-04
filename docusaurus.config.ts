@@ -29,14 +29,18 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/nanoway/nanoway.github.io/tree/master/',
+          showLastUpdateTime: true,
+        },
         blog: {
-          routeBasePath: '/',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          editUrl: 'https://github.com/nanoway/nanoway.github.io/tree/master/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -48,10 +52,20 @@ const config: Config = {
     ],
   ],
 
+  // Barre de recherche locale (sans service externe)
+  themes: ['@easyops-cn/docusaurus-search-local'],
+
   themeConfig: {
     navbar: {
       title: 'Nanoway',
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'guidesSidebar',
+          position: 'left',
+          label: 'Guides',
+        },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/about', label: 'À propos', position: 'left'},
         {
           href: 'https://github.com/nanoway/nanoway.github.io',

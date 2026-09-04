@@ -1,6 +1,6 @@
 ---
 title: Installer un VPN sur Raspberry
-date: 2017-11-11
+sidebar_position: 2
 tags: [Raspberry, VPN, OpenVPN]
 ---
 
@@ -12,8 +12,6 @@ sudo apt-get install openvpn easy-rsa openssl
 ```
 
 Copier le dossier `easy-rsa` dans le répertoire `openvpn` :
-
-<!-- truncate -->
 
 ```shell
 sudo cp -r /usr/share/easy-rsa/ /etc/openvpn/

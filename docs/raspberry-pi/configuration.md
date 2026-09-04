@@ -1,6 +1,6 @@
 ---
-title: Configuration de ma raspberry pi
-date: 2017-06-18
+title: Configurer ma Raspberry Pi
+sidebar_position: 1
 tags: [raspberry-pi]
 ---
 
@@ -9,8 +9,6 @@ tags: [raspberry-pi]
 Je vais utiliser ma framboise pour écrire sur ma page Github et télécharger mes dépôts. Il est donc nécessaire d'installer les paquets Git, ruby et Jekyll.
 
 Remarque : tous les bouts de code existent sous forme de script.sh présent dans mon dépôt git.
-
-<!-- truncate -->
 
 #### script : install-Git-and-Jekyll.sh
 
